@@ -92,18 +92,25 @@ section, footer {
 
 @media all and (max-width:400px) {
   
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .wrapper > * {
     order:999;
   }
 
-  .toggleNav {
-    display: flex;
-    flex-direction: column;
+  .flex-nav {
     order: 1;
   }
 
   .top {
     order: 2;
+  }
+
+  .toggleNav {
+    display: block;
   }
 
   .flex-nav ul {
@@ -116,6 +123,18 @@ section, footer {
 
   .flex-nav li {
     flex-basis: 100%;
+  }
+
+  .details {
+    order: 3;
+  }
+
+  .signup {
+    order: 4;
+  }
+
+  .hero {
+    order: 5;
   }
 
 }
