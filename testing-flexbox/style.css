@@ -1,0 +1,48 @@
+/* Style */
+
+body {
+    font-family: Helvetica;
+}
+
+/* Flex containers */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid red;
+    padding: 3px;
+    min-height: 90vh;
+}
+
+
+/* Nested containers */
+
+section {
+    display: flex;
+    flex: 5.5;
+    align-items: flex-start;
+}
+
+/* Flex items */
+
+article, aside {
+    flex-basis: 100%;
+}
+
+.side-bar {
+    flex: 2.5;
+}
+
+.advertisement {
+    flex: 2;
+}
+
+@media screen and (min-width: 800px) {
+    aside {
+        flex: 2.5;
+    }
+    
+    article {
+        flex: 7.5;
+    }
+}
